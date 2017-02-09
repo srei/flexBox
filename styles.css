@@ -1,15 +1,31 @@
 #parent {
     display: flex;
-    /*flex-direction: column;*/ /*
+    flex-direction: row;
+  /*
+    flex-direction: column;
         CONVERTS the main axis go from the default of horizontal to vertical
+    
+    /*justify-content: 
+        space-between: gives equal space between each square BUT NOT between the squares and the container
+        space-around: gives equal space on EITHER side of the square (
+        flex-end;*/
+
+    /*align-items:
+        works like justify-content along the CROSS Axis (up & down) 
     */
-    justify-content: flex-end;
+    align-items: flex-end;
+    /*justify-content: center;*/
 }
 
 .flex-item {
-    height: 100px;
+    height: auto;
+    /*Set height property auto, to allow align-items: stretch to take precedence*/
     width: 100px;
     color: lightblue;
     background-color: rebeccapurple;
     border: 1px solid white;
+}
+
+.flex-item #one {
+    align-self: center;
 }
