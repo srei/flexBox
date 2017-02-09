@@ -1,5 +1,9 @@
 #parent {
     display: flex;
+    /*flex-direction: column;*/ /*
+        CONVERTS the main axis go from the default of horizontal to vertical
+    */
+    justify-content: flex-end;
 }
 
 .flex-item {
